@@ -5,38 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <!--Links de css-->
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/config.css">
+    <link rel="stylesheet" href="css/index.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300&family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <main class="calculadora">
-        <div class="pantalla">
-            <span class="resultado">1234,56</span>
+    <body>
+        <div class="container">
+            <div class="calculadora">
+                <div class="display">
+                    <div id="valor-before"></div>
+                    <div id="valor-current"></div>
+                </div>
+                <button class="operador ac" onclick="display.borrarTodo()" >AC</button>
+                <button class="operador modulo" value="mod">MOD</button>
+                <button class="operador porcentaje" value="porcentaje">%</button>
+                <button class="operador" value="dividir">÷</button>
+                <button class="numero">7</button>
+                <button class="numero">8</button>
+                <button class="numero">9</button>
+                <button class="operador" value="multiplicar">×</button>
+                <button class="numero">4</button>
+                <button class="numero">5</button>
+                <button class="numero">6</button>
+                <button class="operador" value="restar">-</button>
+                <button class="numero">1</button>
+                <button class="numero">2</button>
+                <button class="numero">3</button>
+                <button class="operador" value="sumar">+</button>
+                <button onclick="display.borrar()">&larr;</button>
+                <button class="numero">0</button>
+                <button class="numero">.</button>
+                <button class="operador" value="igual">=</button>
+            </div>
         </div>
-        <div class="teclado">
-        <div class="teclaac">AC</div>
-        <div class="teclamas">+/-</div>
-        <div class="teclaporc">%</div>
-        <div class="teclaadiv">/</div>
-        <div class="tecla7">7</div>
-        <div class="tecla8">8</div>
-        <div class="tecla9">9</div>
-        <div class="teclapor">X</div>
-        <div class="tecla4">4</div>
-        <div class="tecla5">5</div>
-        <div class="tecla6">6</div>
-        <div class="tecla-menos">-</div>
-        <div class="tecla-1">1</div>
-        <div class="tecla-2">2</div>
-        <div class="tecla-3">3</div>
-        <div class="tecla-mas">+</div>
-        <div class="cero" class="cero">0</div>
-        <div class="tecla-coma">,</div>
-        <div class="tecla-igual">=</div>
-    </div>
-        
-    </main>
-    <script src="./js/main.js"></script>
+    </body>
+    </html>
+ <script src="./js/index.js"></script>
+ <script src="./js/display.js"></script>
+ <script src="./js/calculadora.js"></script>
 </body>
 </html>
