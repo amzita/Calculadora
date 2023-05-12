@@ -60,7 +60,7 @@ button:focus {
     border-radius: 10px;
     justify-content: space-between;
     box-shadow: inset 0px 0px 5px #00000040;
-    font-size: 2em;
+    font-size: 1.1em;
     overflow: hidden;
 }
 
@@ -70,7 +70,7 @@ button:focus {
 }
 
 #valor-before {
-    font-size: 10.5em;
+    font-size: 1.5em;
     overflow: hidden;
     
     
@@ -83,5 +83,5 @@ button:focus {
 }
 
 .modulo, .ac, .porcentaje {
-    font-size: 20px;
+    font-size: 10px;
 }
